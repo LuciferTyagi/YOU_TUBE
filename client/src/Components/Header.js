@@ -31,7 +31,7 @@ const Header = () => {
   const getSearchSuggestions = async () => {
     console.log("API" + searchQuery);
     const response = await fetch(
-      `http://localhost:3000/search?query=${encodeURIComponent(searchQuery)}`
+      `https://you-tube-server-sand.vercel.app/search?query=${encodeURIComponent(searchQuery)}`
     );
     const json = await response.json();
     console.log(json);
